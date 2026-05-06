@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: PBGLayer5
+    uniqueID: 1439563953
+    locked: 0
+  - name: PBGLayer4
+    uniqueID: 1699994653
+    locked: 0
+  - name: PBGLayer3
+    uniqueID: 2680503715
+    locked: 0
+  - name: PBGLayer2
+    uniqueID: 316899669
+    locked: 0
+  - name: PBGLayer1
+    uniqueID: 2319943111
+    locked: 0
+  - name: PBGLayer
+    uniqueID: 1419678671
+    locked: 0
+  - name: BehindFG_L5
+    uniqueID: 2510955489
+    locked: 0
+  - name: BehindFG_L4
+    uniqueID: 3342352711
+    locked: 0
+  - name: BehindFG_L3
+    uniqueID: 261859989
+    locked: 0
+  - name: BehindFG_L2
+    uniqueID: 3410183321
+    locked: 0
+  - name: BehindFG_L1
+    uniqueID: 4264586855
+    locked: 0
+  - name: Foreground
+    uniqueID: 106737557
+    locked: 0
+  - name: Ground
+    uniqueID: 3574324529
+    locked: 0
+  - name: Entities
+    uniqueID: 2876162253
+    locked: 0
+  - name: Enemies
+    uniqueID: 3490739447
+    locked: 0
+  - name: UI
+    uniqueID: 1795957541
+    locked: 0
+  - name: Player
+    uniqueID: 1946435307
+    locked: 0
+  - name: AboveGround
+    uniqueID: 1724934401
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  m_MigratedRenderPipelines: []
