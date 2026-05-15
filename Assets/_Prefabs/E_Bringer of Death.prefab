@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 3646292419172089963}
   - component: {fileID: 8321756857035283843}
   - component: {fileID: 8260623654860806101}
-  - component: {fileID: 9042728969147418909}
-  m_Layer: 0
+  - component: {fileID: 266439756301141916}
+  - component: {fileID: 420372364940892046}
+  m_Layer: 8
   m_Name: E_Bringer of Death
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -35,6 +36,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8370493761358205663}
+  - {fileID: 6078315072135930744}
+  - {fileID: 4557995444711239494}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2201950088300379513
@@ -83,7 +86,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -804227849
-  m_SortingLayer: 13
+  m_SortingLayer: 15
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -750047184722822154, guid: d72e261086d12994093f3c9619b6ab75, type: 3}
@@ -182,7 +185,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9042728969147418909
+--- !u!114 &266439756301141916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,20 +194,81 @@ MonoBehaviour:
   m_GameObject: {fileID: 1232235130513965329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5743ded89880fee41ba5a96cc5db6b0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 196c75a2ef829c34bb3eef977635e8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  maxHealth: 4
+  enemyDamage: 1
+  attackPointRadius: 0.86
+  eattackPoint: {fileID: 6078315072135930744}
+  spellAttackPointRadius: 0.4
+  espellAttackPoint: {fileID: 4557995444711239494}
   egroundCheck: {fileID: 8370493761358205663}
-  egroundCheckDistance: 0.4
+  egroundCheckDistance: 0.3
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  ewalkSpeed: 1
+  ewalkSpeed: 2
+  chaseSpeed: 2
+  roamDistance: 5
   minIdleTime: 1
   maxIdleTime: 3
   minWalkTime: 2
   maxWalkTime: 5
-  roamDistance: 5
+  detectRangeWidth: 10
+  detectRangeHeight: 1
+  attackRangeWidth: 3.5
+  attackRangeHeight: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  attackCooldown: 2
+--- !u!114 &420372364940892046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232235130513965329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a1e1d61e67de1439c2de62a8f45e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyEffect
+  spellEffectPrefab: {fileID: 4040276139565801195, guid: bc0c0dae358aa23449942b621f7e2896, type: 3}
+  spellSpawnPoint: {fileID: 4557995444711239494}
+  spellEffectDuration: 1.6
+--- !u!1 &3890660006178200734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6078315072135930744}
+  m_Layer: 8
+  m_Name: EAttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6078315072135930744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890660006178200734}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.61, y: 0.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5784627041008785883}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3986890246939777425
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8370493761358205663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EGroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -230,7 +294,38 @@ Transform:
   m_GameObject: {fileID: 3986890246939777425}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.575, y: -0.565, z: 0}
+  m_LocalPosition: {x: -0.536, y: -0.584, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5784627041008785883}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6169180032347489356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4557995444711239494}
+  m_Layer: 8
+  m_Name: ECastSpellSP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4557995444711239494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6169180032347489356}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.12, y: 0.3850001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
