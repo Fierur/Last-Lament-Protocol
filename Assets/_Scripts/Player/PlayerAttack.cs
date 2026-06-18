@@ -37,8 +37,8 @@ public class PlayerAttack : MonoBehaviour
     #region Attack Logic
     private void HandleAttack()
     {
-        if (!pc.isGrounded || pc.isCrouching || pc.jumpPressed || Mathf.Abs(pc.horizontalInput) > 0.1f) return;
- 
+        if (!pc.isGrounded || pc.isCrouching || Mathf.Abs(pc.horizontalInput) > 0.1f) return;
+
         if (pc.isAttacking)
         {
             if (currentCombo >= maxCombo)
@@ -59,7 +59,7 @@ public class PlayerAttack : MonoBehaviour
             }
             return;
         }
- 
+
         ExecuteAttack();
     }
  
@@ -142,7 +142,7 @@ public class PlayerAttack : MonoBehaviour
     public void PushForwardAttack()
     {
         // Assuming facing right is 0 degrees and left is 180 degrees
-        float pushDirection = transform.localRotation.eulerAngles.y == 0 ? 1 : -1;
+        float pushDirection = pc.IsFacingRight ? 1f : -1f;
         pc.rb.linearVelocity = new Vector2(pushDirection * attackStepForce, pc.rb.linearVelocityY);
     }
     #endregion

@@ -18,8 +18,8 @@ TagManager:
   - Enemy
   - 
   - 
-  - 
-  - 
+  - MapBounds
+  - Ledge
   - 
   - 
   - 
@@ -93,6 +93,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1946435307
+    locked: 0
+  - name: AboveGroundL3
+    uniqueID: 2016474217
     locked: 0
   - name: AboveGroundL2
     uniqueID: 1007392541

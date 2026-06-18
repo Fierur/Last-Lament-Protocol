@@ -1,18 +1,21 @@
 using UnityEngine;
 
+
 public class MapBounds : MonoBehaviour
 {
-    [Header("Map Boundary (World Space)")]
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
+    
+    public Collider2D BoundingCollider => GetComponent<Collider2D>();
+    // Shorthand để ParallaxLayer đọc bounds
+    public float minX => BoundingCollider.bounds.min.x;
+    public float maxX => BoundingCollider.bounds.max.x;
+    public float minY => BoundingCollider.bounds.min.y;
+    public float maxY => BoundingCollider.bounds.max.y;
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = new Color(0f, 1f, 0.5f, 0.4f);
-        Vector3 center = new Vector3((minX + maxX) / 2f, (minY + maxY) / 2f, 0f);
-        Vector3 size   = new Vector3(maxX - minX, maxY - minY, 0f);
-        Gizmos.DrawWireCube(center, size);
+        var b = GetComponent<PolygonCollider2D>();
+        if (b == null) return;
+        Gizmos.color = new Color(0f, 1f, 0.5f, 0.3f);
+        Gizmos.DrawWireCube(b.bounds.center, b.bounds.size);
     }
 }

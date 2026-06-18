@@ -25,12 +25,15 @@ public class PlayerCrouch : MonoBehaviour
  
     void Update()
     {
+        if (pc.isGrabbing) return;
         HandleCrouch();
     }
  
     #region Crouch Logic
     void HandleCrouch()
     {
+        if (pc.isGrabbing) return;
+        
         if (pc.crouchHeld && pc.isGrounded)
             pc.isCrouching = true;
         else if (!pc.isCeilingBlocked)
