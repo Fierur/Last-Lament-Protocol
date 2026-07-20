@@ -116,28 +116,27 @@ Emotion System
 
 ## 📂 Project Structure
 
-
-🚧 Development Roadmap
+🚧 Development Roadmap <br>
  Player Controller
- Dash
- Combo Attack
- Ledge Grab
- Camera System
- Map System
- Enemy Prototype
-In Progress
- Emotion Bargain System
- Pact Upgrade Tree
- Dialogue System
- Save / Load
- UI
- Boss 1
-Planned
- Full Area 1
- Area 2
- Area 3
- Steam Demo
- Steam Release
+ Dash <br>
+ Combo Attack <br>
+ Ledge Grab <br>
+ Camera System <br>
+ Map System <br>
+ Enemy Prototype <br>
+In Progress<br>
+ Emotion Bargain System<br>
+ Pact Upgrade Tree<br>
+ Dialogue System<br>
+ Save / Load<br>
+ UI<br>
+ Boss 1<br>
+Planned<br>
+ Full Area 1<br>
+ Area 2<br>
+ Area 3<br>
+ Steam Demo<br>
+ Steam Release<br>
 📖 Lore
 
 Edric Ravenshade, a former noble turned frontier guard, lost everything during the Parade of Monsters.
