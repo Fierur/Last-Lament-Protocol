@@ -149,14 +149,14 @@ The price...
 
 is every emotion that made him human.
 
-📈 Development Status
-Category	Progress
-Gameplay	██░░░░░░░░ 20%
-Combat	███░░░░░░░ 30%
-World	█░░░░░░░░░ 10%
-UI	░░░░░░░░░░ 0%
-Story	███████░░░ 70%
-📜 License
+📈 Development Status<br>
+Category	Progress<br>
+Gameplay	██░░░░░░░░ 20%<br>
+Combat	███░░░░░░░ 30%<br>
+World	█░░░░░░░░░ 10%<br>
+UI	░░░░░░░░░░ 0%<br>
+Story	███████░░░ 70%<br>
+📜 License<br>
 
 This repository contains source code for educational and portfolio purposes.
 
