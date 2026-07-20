@@ -171,7 +171,7 @@ is every emotion that made him human.
 | UI | ░░░░░░░░░░ 0% |
 | Story | ███████░░░ 70% |
 
-📜 License<br>
+## 📜 License
 
 This repository contains source code for educational and portfolio purposes.
 
@@ -179,7 +179,7 @@ Third-party assets belong to their respective owners and are licensed separately
 
 Please do not redistribute paid assets included in this repository.
 
-❤️ Credits
+## ❤️ Credits
 
 Solo Developer
 
