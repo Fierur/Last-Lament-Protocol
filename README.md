@@ -117,19 +117,6 @@ Emotion System
 ## 📂 Project Structure
 
 
-Assets
-├── _Animations
-├── _Audio
-├── _Characters
-├── _Environments
-├── _Prefabs
-├── _Scenes
-├── _Scripts
-│   ├── Player
-│   ├── Enemy
-│   └── Camera&Map
-├── _Tilemap
-└── Settings
 🚧 Development Roadmap
  Player Controller
  Dash
