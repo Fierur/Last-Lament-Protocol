@@ -116,28 +116,38 @@ Emotion System
 
 ## 📂 Project Structure
 
-🚧 Development Roadmap <br>
- Player Controller
- Dash <br>
- Combo Attack <br>
- Ledge Grab <br>
- Camera System <br>
- Map System <br>
- Enemy Prototype <br>
-In Progress<br>
- Emotion Bargain System<br>
- Pact Upgrade Tree<br>
- Dialogue System<br>
- Save / Load<br>
- UI<br>
- Boss 1<br>
-Planned<br>
- Full Area 1<br>
- Area 2<br>
- Area 3<br>
- Steam Demo<br>
- Steam Release<br>
-📖 Lore
+## 🚧 Development Roadmap
+
+### ✅ Completed
+
+- Player Controller
+- Dash
+- Combo Attack
+- Ledge Grab
+- Camera System
+- Map System
+- Enemy Prototype
+
+### 🚧 In Progress
+
+- Emotion Bargain System
+- Pact Upgrade Tree
+- Dialogue System
+- Save / Load
+- UI
+- Boss 1
+
+### 📅 Planned
+
+- Full Area 1
+- Area 2
+- Area 3
+- Steam Demo
+- Steam Release
+
+---
+
+## 📖 Lore
 
 Edric Ravenshade, a former noble turned frontier guard, lost everything during the Parade of Monsters.
 
@@ -149,13 +159,18 @@ The price...
 
 is every emotion that made him human.
 
-📈 Development Status<br>
-Category	Progress<br>
-Gameplay	██░░░░░░░░ 20%<br>
-Combat	███░░░░░░░ 30%<br>
-World	█░░░░░░░░░ 10%<br>
-UI	░░░░░░░░░░ 0%<br>
-Story	███████░░░ 70%<br>
+---
+
+## 📈 Development Status
+
+| Category | Progress |
+|-----------|:-------:|
+| Gameplay | ██░░░░░░░░ 20% |
+| Combat | ███░░░░░░░ 30% |
+| World | █░░░░░░░░░ 10% |
+| UI | ░░░░░░░░░░ 0% |
+| Story | ███████░░░ 70% |
+
 📜 License<br>
 
 This repository contains source code for educational and portfolio purposes.
