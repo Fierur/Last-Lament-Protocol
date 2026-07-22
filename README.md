@@ -55,10 +55,11 @@ Gameplay progression and narrative progression become the same system.
 Gameplay GIF
 
 <p align="center">
-  <img src="Assets/Scenes/short_demo.gif" width="500">
+  <img src="Assets/Scenes/short_demo.gif" width="500"><br>
+  *A Dark Fantasy Action Metroidvania built with Unity*
 </p>
 
-*A Dark Fantasy Action Metroidvania built with Unity*
+
 
 Combat
 
