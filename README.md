@@ -149,15 +149,7 @@ Emotion System
 
 ## 📖 Lore
 
-Edric Ravenshade, a former noble turned frontier guard, lost everything during the Parade of Monsters.
-
-Standing before absolute despair, he accepts a forbidden pact with Vaelgor.
-
-He will gain unimaginable power.
-
-The price...
-
-is every emotion that made him human.
+Edric Ravenshade, a former noble turned frontier guard, lost everything during the Parade of Monsters. Standing before absolute despair, he accepts a forbidden pact with Vaelgor. He will gain unimaginable power. The price... is every emotion that made him human.
 
 ---
 
@@ -180,8 +172,6 @@ Third-party assets belong to their respective owners and are licensed separately
 Please do not redistribute paid assets included in this repository.
 
 ## ❤️ Credits
-
-Solo Developer
 
 Game Design
 
