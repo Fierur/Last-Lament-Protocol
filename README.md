@@ -54,6 +54,14 @@ Gameplay progression and narrative progression become the same system.
 
 Gameplay GIF
 
+# LAST LAMENT
+
+<p align="center">
+  <img src="Assets/Scenes/gameplay.gif" width="900">
+</p>
+
+*A Dark Fantasy Action Metroidvania built with Unity*
+
 Combat
 
 Boss Fight
