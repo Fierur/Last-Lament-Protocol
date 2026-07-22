@@ -57,7 +57,7 @@ Gameplay GIF
 # LAST LAMENT
 
 <p align="center">
-  <img src="Assets/Scenes/gameplay.gif" width="900">
+  <img src="Assets/Scenes/short_demo.gif" width="900">
 </p>
 
 *A Dark Fantasy Action Metroidvania built with Unity*
